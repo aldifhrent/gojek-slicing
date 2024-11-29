@@ -1,30 +1,30 @@
+import { featureData } from "@/lib/const";
 import FeatureCard from "./feature-card";
-import { featureData } from "./lib/const";
+import Scale from "./scale";
 
 export default function Feature() {
   return (
-    <section className="">
+    <section>
       <div className="pt-[80px] px-[20px]">
-        <div className="flex flex-col items-center justify-center">
-          <h1 className="text-white text-4xl font-extrabold">
+        <div className="flex flex-col items-center justify-center mt-20">
+          <h1 className="text-white text-5xl font-extrabold text-center md:text-left">
             Kenalin, Gojek. Si pembawa perubahan
           </h1>
-          <button className="bg-green-500 p-3 w-[100px] rounded-full text-white font-bold text-md mt-8">
-            Gabung
-          </button>
+          <button className="btn-green mt-5">Gabung</button>
         </div>
         {/* Feature  */}
-        <div className="w-full bg-white rounded-xl mt-10 p-10">
-          <div className="flex">
+        <div className="w-full bg-white rounded-tr-[64px] rounded-tl-[64px] mt-36 min-h-screen p-20">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mx-auto gap-32 -mt-20">
             {featureData.map((feature) => (
               <FeatureCard
                 key={feature.id}
-                image={feature?.image}
+                image={feature.image}
                 description={feature.description}
                 title={feature.title}
               />
             ))}
           </div>
+          <Scale />
         </div>
       </div>
     </section>

@@ -4,4 +4,9 @@
 
 body {
   background-color: #101820;
+  font-family: "Maison Neue Demi", initial;
+}
+
+.btn-green {
+  @apply text-white bg-[#00880d] font-bold rounded-full border-none px-6 h-11 inline-flex justify-center items-center text-center w-fit;
 }
