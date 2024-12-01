@@ -8,7 +8,7 @@ export default function Scale() {
         <h1 className="text-5xl font-bold">Skala kami</h1>
         <button className="btn-green mt-4">Gabung</button>
 
-        <div className="grid grid-cols-1 lg:grid-cols-4 gap-20 md:gap-10 mt-40 ">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-20 md:gap-10 mt-40 ">
           {scaleData.map((scale) => (
             <ScaleCard
               key={scale.id}
